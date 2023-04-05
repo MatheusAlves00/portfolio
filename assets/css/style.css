@@ -1,7 +1,161 @@
-*{
+/* || General setup */
+
+/* Colors
+Black = #000000 
+White = #FFFFFF
+Harlequim = #4BEE00
+Steel Pink = #C000D5
+Mimi Pink = #FFD9E8
+Celeste = #C7FCF5
+*/
+
+/* Two Colors 
+Black = #000000 
+White = #FFFFFF
+Dark Purple = #160C28
+Naples Yellow = #EFCB68
+Honeydew = #E1EFE6
+Ash Grey = #AEB7B3
+Rich Black = #000411
+*/
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-weight: 700;
+    list-style: none;
+    font-family: monospace;
 }
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #AEB7B3;
+    box-shadow: 0px 3px 15px 1px #000;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.1vw;
+    padding: 0.9%;
+}
+
+.navbar li {
+    text-decoration: none;
+}
+
+.navbar a{
+    color: #160C28;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 5px black;
+    padding: 10px;
+    margin: 9px;
+}
+
+.navbar a:hover {
+    background-color: #160C28;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px black;
+}
+
+.perfil {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 9.5% 10% 1.5% 10%;
+    gap: 0 180px;
+}
+
+.perfil h2 {
+    font-size: 3.9em;
+    text-transform: uppercase;
+    height: 100px;
+}
+
+.perfil p {
+    width: 500px;
+}
+
+.perfil img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    box-shadow: 0px 0px 10px 1px gray;
+}
+
+.projects, .skills {
+    padding: 1.5% 10% 1.5% 10%;
+}
+
+.projects div {
+    display: flex;
+    flex-flow: row;
+    gap: 85px;
+    margin: 2px;
+}
+
+.projects li {
+    display: flex;
+    flex-flow: column;
+    gap: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px gray;
+    background-color: rgba(0,4,17,1);
+}
+
+.skills p {
+    padding: 0.5% 0 0.5% 0;
+}
+
+.skills ul {
+    list-style: dotted;
+    padding: 0.7% 0 0.7% 3%;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+}
+
+.projects p, .perfil p, .contacts p {
+    line-height: 1.4;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    padding: 0.5%;
+}
+
+.contacts {
+    text-decoration: none;
+    text-align: left;
+    padding: 1.5% 10% 7.5% 10%;
+}
+
+
+.contacts a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #E1EFE6;
+}
+
+.contacts ul {
+    padding: 0.7% 0 0.7% 3%;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+}
+
+.projects h3, .skills h3, .contacts h3 {
+    text-transform: uppercase;
+    padding: 1% 0% 1% 0%;
+}
+
+body {
+    background: rgb(0,4,17);
+    background: linear-gradient(0deg, rgba(0,4,17,1) 20%, rgba(0,0,0,1) 50%, rgba(22,12,40,1) 100%);
+    color: white;
+}
+
+/* || typography */
