@@ -91,6 +91,7 @@ Rich Black = #000411
 
 .projects, .skills {
     padding: 1.5% 10% 1.5% 10%;
+    margin: 1% 0 1% 0; 
 }
 
 .projects div {
@@ -103,11 +104,25 @@ Rich Black = #000411
 .projects li {
     display: flex;
     flex-flow: column;
-    gap: 80px;
+    gap: 40px 80px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 2px 5px 1px gray;
     background-color: rgba(0,4,17,1);
+}
+
+.projects > p {
+    height: 50px;
+}
+
+.projects li p {
+    width: 280px;
+    text-align: center;
+}
+
+.projects li > img {
+    width: 280px;
+    border-radius: 5px;
 }
 
 .skills p {
@@ -118,6 +133,10 @@ Rich Black = #000411
     list-style: dotted;
     padding: 0.7% 0 0.7% 3%;
     letter-spacing: 1px;
+    font-size: 1.1em;
+}
+
+.skills li, p {
     font-size: 1.1em;
 }
 
