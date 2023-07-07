@@ -26,6 +26,19 @@ Rich Black = #000411
     font-family: monospace;
 }
 
+.logo {
+    display: flex;
+}
+
+.logo li {
+    padding: 10px;
+}
+
+.logo a {
+    color: white;
+    font-size: 25px;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -65,7 +78,7 @@ Rich Black = #000411
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 3.5% 10% 3.5% 10%;
+    padding: 1.5% 10% 3.5% 10%;
     gap: 0 180px;
     background: linear-gradient(0deg, black 10%, #061826 50%, #061826 100%);
     color: white;
