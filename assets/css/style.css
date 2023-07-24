@@ -9,21 +9,17 @@ Mimi Pink = #FFD9E8
 Celeste = #C7FCF5
 */
 
-/* Two Colors 
-Black = #000000 
-White = #FFFFFF
-Dark Purple = #160C28
-Naples Yellow = #EFCB68
-Honeydew = #E1EFE6
-Ash Grey = #AEB7B3
-Rich Black = #000411
-*/
+/* Font */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     font-family: monospace;
+}
+
+body {
 }
 
 .logo {
@@ -39,6 +35,10 @@ Rich Black = #000411
     font-size: 25px;
 }
 
+.logo a:hover {
+    transform: scale(1.1);
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -50,8 +50,7 @@ Rich Black = #000411
 .navbar ul {
     display: flex;
     flex-direction: row;
-    margin-bottom: 4.5vw;
-    padding: 1.0%;
+    padding: 0 1.0% 0 1.0%;
 }
 
 .navbar li {
@@ -62,7 +61,7 @@ Rich Black = #000411
     display: block;
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.9em;
     text-shadow: 2px 2px 5px black;
     padding: 10px 10px 0px 10px;
     margin: 20px 20px 20px 20px;
@@ -70,35 +69,83 @@ Rich Black = #000411
 }
 
 .navbar a:hover {
-    transform: scale(1.4);
-    box-shadow: inset 0 -2px 0px 0px white;
+    transform: scale(1.1);
+    box-shadow: inset 0 -2px 0px 0px #fff;
+}
+
+.home {
+    text-align: center;
+}
+
+.home > .notebook {
+    width: 50%;
+}
+
+.texts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px 100%;
+}
+
+.texts > h1, .texts > h2{
+    width: 360px;
+    position: relative;
+    color: hsl(0, 0%, 88%);
+    font-weight: bold;
+    font-family: "Anonymous Pro", monospace;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    text-shadow: 3px 3px 2px black;
+}
+
+.texts > h1 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    animation: typewriter1 1.5s steps(44) 1s 1 normal both, blinkTextCursor 500ms 6;
+}
+
+.texts > h2 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    animation: typewriter2 1.5s steps(44) 3.5s 1 normal both, blinkTextCursor 500ms infinite 3s;
 }
 
 .perfil {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 1.5% 10% 3.5% 10%;
+    padding: 1.5% 10% 5.5% 10%;
     gap: 0 180px;
-    background: linear-gradient(0deg, black 10%, #061826 50%, #061826 100%);
+    background-repeat: no-repeat;
     color: white;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(6, 24, 38, 0.5)), url('../images/background.jpg');
+    background-size: cover;
+    background-position: top;
 }
 
-.perfil h2 {
+.text_user > h2 {
     font-size: 4.0em;
     text-transform: uppercase;
     height: 100px;
 }
 
-.perfil p {
+.text_user > p {
     width: 500px;
+    text-align: justify;
+    word-spacing: 2px;
 }
 
-.perfil img {
+.perfil .image_user > img {
     width: 300px;
     height: 300px;
     border-radius: 150px;
-    box-shadow: 0px 0px 10px 1px gray;
+    box-shadow: 0px 0px 10px 5px #061826;
+}
+
+.text_user, .image_user {
+    padding: 9% 0 0% 0;
 }
 
 .projects, .skills {
@@ -190,7 +237,39 @@ Rich Black = #000411
     padding: 1% 0% 1% 0%;
 }
 
-body {
+/* || Keyframes */
+
+@keyframes typewriter1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 355px;
+    }
+}
+
+@keyframes typewriter2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: transparent;
+    }
+    to {
+        border-right: 2px solid hsl(0, 0%, 80%);
+    }
+}
+
+@keyframes disappear {
+    to {
+        animation-name: none;
+    }
 }
 
 /* || typography */
