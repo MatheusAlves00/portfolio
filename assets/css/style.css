@@ -152,6 +152,62 @@ body {
     padding: 10% 0 0 0;
 }
 
+.work {
+    text-align: center;
+}
+
+.work h2 {
+    font-size: 2.0em;
+    color: #80808080;
+    letter-spacing: 1px;
+    margin-top: 5%;
+    margin: 60px 0 10px;
+}
+
+.work h2 span {
+    font-size: 1.8em;
+    color: #357EEF;
+    padding: 2% 3%;
+    font-weight: 400;
+}
+
+.work #work_services {
+    font-size: 1.0em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.work ul {
+    display: flex;
+    justify-content: center;
+    gap: 0 50px;
+    margin: 60px 0 10px;
+}
+
+.work li {
+    font-size: 5.0em;
+}
+
+.work #work_title_apps {
+    font-size: 2.5em;
+    margin: 5px 0;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: 10;
+}
+
+.work #work_apps {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 20px 0;
+    font-family: Courier, monospace;
+}
+
+.work #work_detail_apps {
+    width: 450px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
 .projects {
     padding: 1.5% 10% 1.5% 10%;
     margin: 1% 0 1% 0; 
