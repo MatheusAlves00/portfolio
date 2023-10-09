@@ -209,40 +209,129 @@ body {
 }
 
 .projects {
-    padding: 1.5% 10% 1.5% 10%;
-    margin: 1% 0 1% 0; 
-}
-
-.projects div {
     display: flex;
-    flex-flow: row;
-    gap: 85px;
-    margin: 2px;
+    background-color: #357EEF;
+    margin: 10% 0 15%;
 }
 
-.projects li {
+.list_projects {
     display: flex;
-    flex-flow: column;
-    gap: 40px 80px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 2px 5px 1px gray;
-    background-color: rgba(0,4,17,1);
+    background-color: black;
 }
 
-.projects > p {
-    height: 50px;
+.list_projects p {
+    margin: 1px 0;
 }
 
-.projects li p {
-    width: 280px;
-    text-align: center;
+.projects a {
+    text-decoration: none;
+    width: auto;
+    background-size: 100% 100%;
+}
+
+.item_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20px;
+    position: relative;
+    width: 285px;
+    height: 100%;
+}
+
+.item_list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 1s;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+#instruments_store::before {
+    background-image: url('../images/screenshots/instrument-store.png');
+}
+
+#time_to_answer::before {
+    background-image: url('../images/screenshots/time-to-answer.png');
+}
+
+#cripto_wallet::before {
+     background-image: url('../images/screenshots/cripto-wallet.png');
+}
+
+.item_list * {
+    visibility: hidden;
+    z-index: 1;
+}
+
+.item_list:hover * {
+    visibility: visible;;
+}
+
+.item_list:hover::before {
+    opacity: .6;
+}
+
+.item_list p {
     color: white;
+    text-shadow: 1px 1px 5px black;
 }
 
-.projects li > img {
-    width: 280px;
-    border-radius: 5px;
+.projects #projects_title {
+    text-align: left;
+    color: white;
+    margin: 80px 90px 95px 45px;
+}
+
+.projects #projects_title p {
+    font-size: 0.8em;
+    letter-spacing: 5px;
+    font-family: Courier, monospace;
+    text-transform: uppercase;
+}
+
+.projects h3 {
+    font-size: 3.0em;
+    font-family: "Anonymous Pro";
+    font-weight: 300;
+    margin: 10px 0 20px;
+}
+
+.projects i {
+    font-size: 2.0em;
+    margin: 25px 0 0 40px; 
+    transform:scale(1.3,1);
+}
+
+.projects .tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.projects .tags li {
+    color: white;
+    background-color: #357EEF;
+    padding: 5px;
+    margin: 5px 0 8px;
+    border-radius: 50px;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.projects .list_projects_detail {
+    font-size: 1.2em;
+    color: white;
+    margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 35px;
+    padding: 20px 30px;
 }
 
 .skills {
@@ -328,7 +417,7 @@ body {
     font-size: 1.1em;
 }
 
-.projects h3, .contacts h3 {
+.contacts h3 {
     text-transform: uppercase;
     padding: 1% 0% 1% 0%;
 }
