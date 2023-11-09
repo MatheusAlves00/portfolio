@@ -1,0 +1,196 @@
+/* || General setup */
+
+/* Font */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: monospace;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: #232323;
+    color: white;
+    width: auto;
+    height: auto;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 20px;
+    gap: 0 10px;
+}
+
+.navbar a {
+    background-color: gray;
+    padding: 10px;
+    margin: 0 10px 0 0;
+    position: absolute;
+    right: 0;
+    border-radius: 15px;
+}
+
+.navbar button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar ul h1 {
+    font-size: 2.0em;
+}
+
+.navbar ul li {
+    background-color: #357EEF;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 3px 2px;
+    font-size: 1.1em;
+}
+
+article {
+}
+
+img {
+    display: block;
+    width: 60%;
+    background-color: black;
+    padding: 5px;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.title_details {
+    margin: 100px 100px 0;
+    font-size: 2.5em;
+    background-image: linear-gradient(to left, #357EEF 10%, black 40%, #357EEF 70%, black 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 26%;
+    border-left: 4px solid #357EEF;
+    padding: 0 0 0 10px;
+}
+
+.details {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px 0;
+    margin: 50px 100px 60px;
+    padding: 1px 10px;
+    border-left: 4px solid gray;
+}
+
+.details p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.line {
+    background-color: black;
+    padding: 3px;
+}
+
+.contacts {
+    padding: 1.5% 10% 7.5% 10%;
+    background: linear-gradient(0deg, black 10%, #061826 50%, #061826 100%);
+    color: white;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: white;
+}
+
+.contacts .list_contacts {
+    display: flex;
+    gap: 10px 50px;
+    font-size: 1.1em;
+}
+
+.contacts h3 {
+    font-size: 3.0em;
+    margin: 1% 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 45px auto 45px auto;
+    border-top: 1px solid #fff; 
+    border-bottom: 1px solid #fff; 
+    line-height: 0.0em;
+}
+
+.contacts #span_contacts {
+    background-color: #061826; 
+    padding: 0 15px; 
+}
+
+.list_contacts {
+    display: flex;
+    justify-content: flex-end;
+    margin: 6.2% 0;
+}
+
+.list_contacts h4 {
+    text-transform: uppercase;
+    color: #357EEF;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+}
+
+.list_contacts_li {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px 0;
+    margin: 0 14px;
+}
+
+.list_items1 li, .list_items2 li {
+    font-size: 1.4em;
+}
+
+.list_items1 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px 0;
+}
+
+.list_items2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px 0;
+}
+
+.list_items2 li {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px 10px;
+    text-transform: uppercase;
+}
+
+.list_items1 a {
+    font-weight: 300;
+}
+
+.list_items2 div {
+    color: black;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 12px 12px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 40px;
+}
+
+.list_items2 span {
+    font-size: 0.7em;
+    font-weight: 300;
+}
