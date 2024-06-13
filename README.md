@@ -2,8 +2,6 @@
 
 ![Project Introduction](https://github.com/MatheusAlves00/portfolio/blob/main/assets/images/screenshots/print.png)
 
-> Status: Developing ⚠️
-
 ## Description
 
 ...  This project is my Portfolio.
