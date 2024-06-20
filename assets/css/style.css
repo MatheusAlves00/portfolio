@@ -529,4 +529,62 @@ body {
     }
 }
 
+/* || mediaquery */
+
+@media screen and (max-width: 768px) {
+    .perfil {
+        display: block;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(6, 24, 38, 0.5)), url('../images/background.jpg');
+        width: 80vw;
+
+        /* padding: 0; */
+        background-repeat: no-repeat;
+        color: white;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(6, 24, 38, 0.5)), url('../images/background.jpg');
+        background-size: cover;
+        background-position: top;
+    }
+
+    .navbar {
+        display: block;
+        justify-content: center;
+        overflow: hidden;
+        top: 0;
+        width: 100%;
+    }
+
+    .navbar ul {
+        padding: 3% 0;
+    }
+
+    .navbar a{
+        font-size: 1.1em;
+        padding: 5px 5px 0px 5px;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .texts > h1 {
+        font-size: 14px;
+    }
+
+    .texts > h2 {
+        font-size: 14px;
+    }
+
+    .text_user h2 {
+        font-size: 2.1em;
+        height: 40px;
+    }
+
+    .text_user p {
+        width: auto;
+        text-align: justify;
+        word-spacing: 0px;
+        line-height: 1.1;
+        letter-spacing: 1px;
+        font-size: 1.0em;
+        padding: 0.5%;
+    }
+}
+
 /* || typography */
