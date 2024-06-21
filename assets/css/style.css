@@ -585,6 +585,27 @@ body {
         font-size: 1.0em;
         padding: 0.5%;
     }
+
+    .skills h3 {
+        font-size: 1.0em;
+        margin: 25px auto 25px auto;
+    }
+
+    .skills ul {
+        gap: 0% 4%;
+    }
+
+    .skills li {
+        width: 10%;
+        height: 10%;
+        padding: 10px;
+        font-size: 0.6em;
+    }
+
+    .skills a {
+        font-size: 2.1em;
+        text-shadow: 1px 1px 3px #000;
+    }
 }
 
 /* || typography */
