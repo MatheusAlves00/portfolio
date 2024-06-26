@@ -631,6 +631,33 @@ body {
         width: 100vw;
         font-size: 0.9em;
     }
+
+    .projects {
+        height: 200px;
+    }
+
+    .item_list {
+        padding: 0;
+        width: 100px;
+        height: 100%;
+    }
+
+    .projects #projects_title {
+        margin: 5px 5px 20px 5px;
+    }
+
+    .projects #projects_title p {
+        font-size: 0.5em;
+        letter-spacing: 4px;
+    }
+
+    .projects h3 {
+        font-size: 1.2em;
+    }
+
+    .projects i {
+        font-size: 1.0em;
+    }
 }
 
 /* || typography */
