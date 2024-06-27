@@ -658,6 +658,34 @@ body {
     .projects i {
         font-size: 1.0em;
     }
+
+    .contacts .list_contacts {
+        gap: 10px 10px;
+        font-size: 0.4em;
+    }
+
+    .contacts h3 {
+        font-size: 1.5em;
+        margin: 25px auto 25px auto;
+    }
+
+    .list_contacts_li {
+        gap: 10px 0;
+    }
+
+    .list_items1 {
+        gap: 5px 0;
+    }
+
+    .list_items2 {
+        gap: 5px 0;
+    }
+
+    .list_items2 div {
+        padding: 2px 2px;
+        width: 9px;
+        height: 9px;
+    }
 }
 
 /* || typography */
