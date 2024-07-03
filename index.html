@@ -16,19 +16,25 @@
 
       <div class="perfil" id="perfil">
 
-        <ul class="logo">
+        <ul class="logo" id="logo">
             <li><a class="fa-brands fa-github" href="https://github.com/MatheusAlves00" target="_blank"></a></li>
             <li><a class="fa-brands fa-linkedin" href="http://www.linkedin.com/in/matheusalves00" target="_blank" ></a></li>
             <li><a class="fa-brands fa-instagram" href="https://www.instagram.com/matheus4lves_" target="_blank" ></a></li>
         </ul>
 
         <nav class="navbar">
-          <ul>
-            <li><a href="#perfil">Home</a></li>
+          <a href="#home" class="active" id="active">Logo</a>
+          <ul id="myLinks">
+            <li><a href="#perfil" class="first" >Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contacts">Contact</a></li>
           </ul>
+
+          <a href="javascript:void(0);" class="icon" id="icon" onclick="showMenu()">
+            Menu
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
 
         <div class="home">
