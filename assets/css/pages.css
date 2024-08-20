@@ -196,6 +196,27 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+
+    .navbar {
+        width: 100%;
+        position: fixed;
+    }
+
+    .navbar ul h1 {
+        font-size: 1.8em;
+    }
+
+    .navbar ul li {
+        display: none;
+        overflow: hidden;
+        visibility:hidden;
+    }
+
+    img {
+        margin: 130px auto 50px auto;
+    }
+
+
     .contacts {
         height: 500px;
         padding: 1.5% 4% 7.5% 4%;
