@@ -213,9 +213,21 @@ img {
     }
 
     img {
-        margin: 130px auto 50px auto;
+        width: 80%;
+        margin: 120px auto 60px auto;
     }
 
+    .title_details {
+        margin: 50px auto 0;
+        width: 80%;
+        padding: 1px 10px;
+    }
+
+    .details {
+        margin: 50px auto 60px;
+        padding: 1px 10px;
+        width: 80%;
+    }
 
     .contacts {
         height: 500px;
