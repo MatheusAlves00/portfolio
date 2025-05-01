@@ -845,7 +845,7 @@ body {
     }
 
     #list_contacts_li_menu {
-        padding-right: 67px;
+        padding-right: 15%;
     }
 
     .list_items1 {
@@ -859,6 +859,7 @@ body {
 
     #my_contacts {
         padding-top: 5%;
+        font-size: 90%;
     }
 
     #my_number {
